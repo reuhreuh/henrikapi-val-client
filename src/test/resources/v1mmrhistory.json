@@ -1,0 +1,28 @@
+{
+  "status": 200,
+  "name": "Henrik3",
+  "tag": "EUW3",
+  "data": [
+    {
+      "currenttier": 12,
+      "currenttier_patched": "Gold 1",
+      "images": {
+        "small": "string",
+        "large": "string",
+        "triangle_down": "string",
+        "triangle_up": "string"
+      },
+      "match_id": "e5a3301c-c8e5-43bc-be94-a5c0d5275fd4",
+      "map": {
+        "name": "Icebox",
+        "id": "e2ad5c54-4114-a870-9641-8ea21279579a"
+      },
+      "season_id": "34093c29-4306-43de-452f-3f944bde22be",
+      "ranking_in_tier": 20,
+      "mmr_change_to_last_game": -16,
+      "elo": 920,
+      "date": "Tuesday, January 11, 2022 9:52 PM",
+      "date_raw": 1641934366
+    }
+  ]
+}
