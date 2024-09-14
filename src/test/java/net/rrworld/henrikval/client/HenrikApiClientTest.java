@@ -2,6 +2,7 @@ package net.rrworld.henrikval.client;
 
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.requestTo;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withBadRequest;
+import static org.springframework.test.web.client.response.MockRestResponseCreators.withRawStatus;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
 import java.io.IOException;
@@ -61,6 +62,17 @@ public class HenrikApiClientTest {
 		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withBadRequest());
+		
+		Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
+		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getV1PlayerMMRHistory300() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
+			.andRespond(withRawStatus(302));
 		
 		Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
 		

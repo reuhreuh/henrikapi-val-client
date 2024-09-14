@@ -14,7 +14,7 @@ Valorant Java client based on [HenrikDev API](https://docs.henrikdev.xyz/).
 
 
 ## Features
-`henrikapi-val-client` provides 1 to 1 SDK get data from [HenrikDev API](https://docs.henrikdev.xyz/valorant/general). There is also a [Swagger definition](https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API).
+`henrikapi-val-client` provides 1 to 1 SDK get data from [HenrikDev API](https://docs.henrikdev.xyz/valorant/general).
 This API is free, however, you'll have to request an API key on [HenrikDev System Discord](https://discord.gg/b5FmTqG)
 
 So far following end-points are implemented:
@@ -31,7 +31,7 @@ So far following end-points are implemented:
 
 - /valorant/v1/premier/{team_name}/{team_tag}
 
-The SDK also a complete API model, generated from the [Swagger definition](https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API).
+The SDK also provides a complete API model, generated from the [Swagger definition](https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API).
 
 
 ## Getting started
@@ -48,7 +48,7 @@ Import dependency in your `pom.xml` :
 <properties>
   ...
   <!-- Use the latest version whenever possible. -->
-  <henrikikval.client.version>1.0.0</henrikikval.client.version>
+  <henrikikval.client.version>1.0.0-SNAPSHOT</henrikikval.client.version>
   ...
 </properties>
 
@@ -64,7 +64,7 @@ Import dependency in your `pom.xml` :
 ```
 
 ### Usage
-Just instanciate the client with API key and Region :
+Just instanciate the client with API key :
 
 ```java
 HenrikApiClient client = new HenrikApiClient("HDEV-XXX");
@@ -82,3 +82,7 @@ public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${h
 
 ## Documentation
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
+
+## Changelog
+### v1.0.0 (TBD)
+- First release with just 3 end-points
