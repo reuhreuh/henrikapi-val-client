@@ -1,0 +1,5299 @@
+{
+  "status": 200,
+  "data": {
+    "metadata": {
+      "match_id": "696848f3-f16f-45bf-af13-e2192f81a600",
+      "map": {
+        "id": "7eaecc1b-4337-bbf6-6ab9-04b8f06b3319",
+        "name": "Ascent"
+      },
+      "game_version": "release-03.12-shipping-16-649370",
+      "game_length_in_ms": 506311,
+      "started_at": "2022-01-04T21:29:26.618Z",
+      "is_completed": true,
+      "queue": {
+        "id": "spikerush",
+        "name": "Spike Rush",
+        "mode_type": "Standard"
+      },
+      "season": {
+        "id": "a16955a5-4ad0-f761-5e9e-389df1c892fb",
+        "short": "e3a3"
+      },
+      "platform": "PC",
+      "premier": null,
+      "party_rr_penaltys": [
+        {
+          "party_id": "5a87807f-b202-42ce-9bab-99231a37a54f",
+          "penalty": 0
+        },
+        {
+          "party_id": "319150b1-c4d1-452a-8388-1f190261f1d2",
+          "penalty": 0
+        },
+        {
+          "party_id": "2f1581d1-9c9c-4e5d-ab7a-3f10c5d7ca96",
+          "penalty": 0
+        },
+        {
+          "party_id": "034c1a47-4fb9-45a3-a49d-06e1f4c64b5d",
+          "penalty": 0
+        },
+        {
+          "party_id": "5f9fb4cd-dde9-47a5-a2dd-cb5b70240970",
+          "penalty": 0
+        },
+        {
+          "party_id": "bd3476f6-49d6-46a1-bc95-3426d1723645",
+          "penalty": 0
+        },
+        {
+          "party_id": "70c63996-72f5-4b7c-b8b6-3fa7bfb87dc3",
+          "penalty": 0
+        },
+        {
+          "party_id": "26d53041-6a70-4d27-9d37-74e0503c492a",
+          "penalty": 0
+        }
+      ],
+      "region": "eu",
+      "cluster": "Paris 1"
+    },
+    "players": [
+      {
+        "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+        "name": "Excelsior",
+        "tag": "GOFIO",
+        "team_id": "Red",
+        "platform": "PC",
+        "party_id": "26d53041-6a70-4d27-9d37-74e0503c492a",
+        "agent": {
+          "id": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+          "name": "Sova"
+        },
+        "stats": {
+          "score": 1134,
+          "kills": 4,
+          "deaths": 5,
+          "assists": 1,
+          "headshots": 1,
+          "bodyshots": 10,
+          "legshots": 2,
+          "damage": {
+            "dealt": 911,
+            "received": 973
+          }
+        },
+        "ability_casts": {
+          "grenade": 2,
+          "ability1": 2,
+          "ability2": 5,
+          "ultimate": 1
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "d2b288ea-4dc9-0b3b-fc8c-3baec575f0f8",
+          "title": "bec998ee-416d-ba4a-8afb-a4ba38c9e228",
+          "preferred_level_border": null
+        },
+        "account_level": 193,
+        "session_playtime_in_ms": 12360000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+        "name": "lj0350",
+        "tag": "SNB",
+        "team_id": "Red",
+        "platform": "PC",
+        "party_id": "319150b1-c4d1-452a-8388-1f190261f1d2",
+        "agent": {
+          "id": "a3bfb853-43b2-7238-a4f1-ad90e9e46bcc",
+          "name": "Reyna"
+        },
+        "stats": {
+          "score": 1103,
+          "kills": 3,
+          "deaths": 5,
+          "assists": 3,
+          "headshots": 1,
+          "bodyshots": 13,
+          "legshots": 1,
+          "damage": {
+            "dealt": 853,
+            "received": 770
+          }
+        },
+        "ability_casts": {
+          "grenade": 7,
+          "ability1": 2,
+          "ability2": 3,
+          "ultimate": 1
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "7b240a91-4925-8bb6-7812-60b49543e145",
+          "title": "631f4283-48b1-1855-d646-5e8f80e29821",
+          "preferred_level_border": null
+        },
+        "account_level": 177,
+        "session_playtime_in_ms": 11220000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 18950,
+            "average": 3158.3333
+          }
+        }
+      },
+      {
+        "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+        "name": "Byakuya Kuchiki",
+        "tag": "sad",
+        "team_id": "Red",
+        "platform": "PC",
+        "party_id": "319150b1-c4d1-452a-8388-1f190261f1d2",
+        "agent": {
+          "id": "f94c3b30-42be-e959-889c-5aa313dba261",
+          "name": "Raze"
+        },
+        "stats": {
+          "score": 830,
+          "kills": 2,
+          "deaths": 6,
+          "assists": 2,
+          "headshots": 0,
+          "bodyshots": 13,
+          "legshots": 0,
+          "damage": {
+            "dealt": 555,
+            "received": 913
+          }
+        },
+        "ability_casts": {
+          "grenade": 5,
+          "ability1": 3,
+          "ability2": 4,
+          "ultimate": 0
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "2ee6d025-4aac-3a67-0f6e-dba827acc75f",
+          "title": "8b426759-4e32-0c61-51cc-289dc0a33073",
+          "preferred_level_border": "ebc736cd-4b6a-137b-e2b0-1486e31312c9"
+        },
+        "account_level": 244,
+        "session_playtime_in_ms": 3060000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+        "name": "PIG3ON",
+        "tag": "EUW",
+        "team_id": "Blue",
+        "platform": "PC",
+        "party_id": "5f9fb4cd-dde9-47a5-a2dd-cb5b70240970",
+        "agent": {
+          "id": "9f0d8ba9-4140-b941-57d3-a7ad57c6b417",
+          "name": "Brimstone"
+        },
+        "stats": {
+          "score": 504,
+          "kills": 0,
+          "deaths": 3,
+          "assists": 3,
+          "headshots": 0,
+          "bodyshots": 11,
+          "legshots": 2,
+          "damage": {
+            "dealt": 504,
+            "received": 653
+          }
+        },
+        "ability_casts": {
+          "grenade": 7,
+          "ability1": 3,
+          "ability2": 6,
+          "ultimate": 1
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "f78d39b2-4a43-35d6-488e-43a3619855c7",
+          "title": "63057041-4f65-5579-e5a6-d88ae7007ebb",
+          "preferred_level_border": null
+        },
+        "account_level": 107,
+        "session_playtime_in_ms": 1740000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 18050,
+            "average": 3008.3333
+          }
+        }
+      },
+      {
+        "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+        "name": "RudeLeZeb",
+        "tag": "1003",
+        "team_id": "Blue",
+        "platform": "PC",
+        "party_id": "5a87807f-b202-42ce-9bab-99231a37a54f",
+        "agent": {
+          "id": "601dbbe7-43ce-be57-2a40-4abd24953621",
+          "name": "KAY/O"
+        },
+        "stats": {
+          "score": 1570,
+          "kills": 6,
+          "deaths": 4,
+          "assists": 2,
+          "headshots": 5,
+          "bodyshots": 7,
+          "legshots": 2,
+          "damage": {
+            "dealt": 996,
+            "received": 685
+          }
+        },
+        "ability_casts": {
+          "grenade": 4,
+          "ability1": 8,
+          "ability2": 4,
+          "ultimate": 1
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "b7880750-49f6-9623-fc0d-779f0e88fedb",
+          "title": "58dbc4af-4baf-bd4b-7084-9f92485b4006",
+          "preferred_level_border": null
+        },
+        "account_level": 68,
+        "session_playtime_in_ms": 2040000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+        "name": "Henrik3",
+        "tag": "EUW3",
+        "team_id": "Blue",
+        "platform": "PC",
+        "party_id": "70c63996-72f5-4b7c-b8b6-3fa7bfb87dc3",
+        "agent": {
+          "id": "320b2a48-4d9b-a075-30f1-1f93a9b638fa",
+          "name": "Sova"
+        },
+        "stats": {
+          "score": 780,
+          "kills": 2,
+          "deaths": 3,
+          "assists": 1,
+          "headshots": 3,
+          "bodyshots": 11,
+          "legshots": 0,
+          "damage": {
+            "dealt": 701,
+            "received": 489
+          }
+        },
+        "ability_casts": {
+          "grenade": 3,
+          "ability1": 2,
+          "ability2": 7,
+          "ultimate": 0
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "8edf22c5-4489-ab41-769a-07adb4c454d6",
+          "title": "e3ca05a4-4e44-9afe-3791-7d96ca8f71fa",
+          "preferred_level_border": "49413ac2-4ed5-6953-5791-db838ccb58f3"
+        },
+        "account_level": 103,
+        "session_playtime_in_ms": 1980000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+        "name": "nour FPS",
+        "tag": "0000",
+        "team_id": "Blue",
+        "platform": "PC",
+        "party_id": "bd3476f6-49d6-46a1-bc95-3426d1723645",
+        "agent": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "stats": {
+          "score": 3078,
+          "kills": 11,
+          "deaths": 4,
+          "assists": 1,
+          "headshots": 8,
+          "bodyshots": 13,
+          "legshots": 0,
+          "damage": {
+            "dealt": 1761,
+            "received": 855
+          }
+        },
+        "ability_casts": {
+          "grenade": 8,
+          "ability1": 9,
+          "ability2": 9,
+          "ultimate": 3
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "f3a3d5d6-4005-58f7-8a87-e5b489b2db70",
+          "title": "42e2f97d-4e69-274c-589c-0fbdeb397df9",
+          "preferred_level_border": null
+        },
+        "account_level": 162,
+        "session_playtime_in_ms": 420000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+        "name": "Saint",
+        "tag": "2199",
+        "team_id": "Blue",
+        "platform": "PC",
+        "party_id": "2f1581d1-9c9c-4e5d-ab7a-3f10c5d7ca96",
+        "agent": {
+          "id": "1e58de9c-4950-5125-93e9-a0aee9f98746",
+          "name": "Killjoy"
+        },
+        "stats": {
+          "score": 970,
+          "kills": 5,
+          "deaths": 3,
+          "assists": 0,
+          "headshots": 1,
+          "bodyshots": 16,
+          "legshots": 3,
+          "damage": {
+            "dealt": 614,
+            "received": 559
+          }
+        },
+        "ability_casts": {
+          "grenade": 7,
+          "ability1": 3,
+          "ability2": 3,
+          "ultimate": 3
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "f126d573-468e-a790-2c31-228bb651fa79",
+          "title": "574b3440-46bd-fee9-0735-12b4e8a55acd",
+          "preferred_level_border": "49413ac2-4ed5-6953-5791-db838ccb58f3"
+        },
+        "account_level": 92,
+        "session_playtime_in_ms": 120000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 15950,
+            "average": 2658.3333
+          }
+        }
+      },
+      {
+        "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+        "name": "フェルスタッペン",
+        "tag": "1111",
+        "team_id": "Red",
+        "platform": "PC",
+        "party_id": "034c1a47-4fb9-45a3-a49d-06e1f4c64b5d",
+        "agent": {
+          "id": "eb93336a-449b-9c1b-0a54-a891f7921d69",
+          "name": "Phoenix"
+        },
+        "stats": {
+          "score": 780,
+          "kills": 4,
+          "deaths": 4,
+          "assists": 0,
+          "headshots": 2,
+          "bodyshots": 9,
+          "legshots": 2,
+          "damage": {
+            "dealt": 389,
+            "received": 1096
+          }
+        },
+        "ability_casts": {
+          "grenade": 2,
+          "ability1": 3,
+          "ability2": 2,
+          "ultimate": 3
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "b7880750-49f6-9623-fc0d-779f0e88fedb",
+          "title": "d13e579c-435e-44d4-cec2-6eae5a3c5ed4",
+          "preferred_level_border": "5156a90d-4d65-58d0-f6a8-48a0c003878a"
+        },
+        "account_level": 46,
+        "session_playtime_in_ms": 120000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      },
+      {
+        "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+        "name": "Killua",
+        "tag": "hate",
+        "team_id": "Red",
+        "platform": "PC",
+        "party_id": "319150b1-c4d1-452a-8388-1f190261f1d2",
+        "agent": {
+          "id": "add6443a-41bd-e414-f6ad-e58d267f4e95",
+          "name": "Jett"
+        },
+        "stats": {
+          "score": 1013,
+          "kills": 4,
+          "deaths": 4,
+          "assists": 0,
+          "headshots": 1,
+          "bodyshots": 10,
+          "legshots": 1,
+          "damage": {
+            "dealt": 533,
+            "received": 824
+          }
+        },
+        "ability_casts": {
+          "grenade": 5,
+          "ability1": 4,
+          "ability2": 2,
+          "ultimate": 0
+        },
+        "tier": {
+          "id": 0,
+          "name": "Unrated"
+        },
+        "customization": {
+          "card": "24e9c88c-4ee1-82fc-2048-bb8942f2147d",
+          "title": "d13e579c-435e-44d4-cec2-6eae5a3c5ed4",
+          "preferred_level_border": null
+        },
+        "account_level": 113,
+        "session_playtime_in_ms": 3240000,
+        "behavior": {
+          "afk_rounds": 0,
+          "friendly_fire": {
+            "incoming": 0,
+            "outgoing": 0
+          },
+          "rounds_in_spawn": 0
+        },
+        "economy": {
+          "spent": {
+            "overall": 0,
+            "average": 0
+          },
+          "loadout_value": {
+            "overall": 17750,
+            "average": 2958.3333
+          }
+        }
+      }
+    ],
+    "observers": [],
+    "coaches": [],
+    "teams": [
+      {
+        "team_id": "Red",
+        "rounds": {
+          "won": 2,
+          "lost": 4
+        },
+        "won": false,
+        "premier_roster": null
+      },
+      {
+        "team_id": "Blue",
+        "rounds": {
+          "won": 4,
+          "lost": 2
+        },
+        "won": true,
+        "premier_roster": null
+      }
+    ],
+    "rounds": [
+      {
+        "id": 0,
+        "result": "Elimination",
+        "ceremony": "CeremonyDefault",
+        "winning_team": "Red",
+        "plant": {
+          "round_time_in_ms": 23767,
+          "site": "B",
+          "location": {
+            "x": -3294,
+            "y": -7490
+          },
+          "player": {
+            "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+            "name": "Killua",
+            "tag": "hate",
+            "team": "Red"
+          },
+          "player_locations": []
+        },
+        "defuse": null,
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 4,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 104
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 52
+              }
+            ],
+            "stats": {
+              "score": 152,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 6,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 59
+              }
+            ],
+            "stats": {
+              "score": 59,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 100
+              }
+            ],
+            "stats": {
+              "score": 230,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 3,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 4,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 110
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 116
+              }
+            ],
+            "stats": {
+              "score": 402,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 6,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 91
+              }
+            ],
+            "stats": {
+              "score": 91,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1200,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 101
+              }
+            ],
+            "stats": {
+              "score": 189,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 78
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 7
+              }
+            ],
+            "stats": {
+              "score": 145,
+              "kills": 1,
+              "headshots": 1,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1150,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 130
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 26
+              }
+            ],
+            "stats": {
+              "score": 276,
+              "kills": 1,
+              "headshots": 1,
+              "bodyshots": 3,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1350,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 4,
+                "headshots": 1,
+                "legshots": 1,
+                "damage": 115
+              },
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 5
+              }
+            ],
+            "stats": {
+              "score": 254,
+              "kills": 1,
+              "headshots": 1,
+              "bodyshots": 5,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 450,
+              "remaining": 0,
+              "weapon": {
+                "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+                "name": "Frenzy",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "result": "Defuse",
+        "ceremony": "CeremonyDefault",
+        "winning_team": "Blue",
+        "plant": {
+          "round_time_in_ms": 69469,
+          "site": "B",
+          "location": {
+            "x": -2542,
+            "y": -7048
+          },
+          "player": {
+            "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+            "name": "Byakuya Kuchiki",
+            "tag": "sad",
+            "team": "Red"
+          },
+          "player_locations": []
+        },
+        "defuse": {
+          "round_time_in_ms": 104129,
+          "location": {
+            "x": -2623,
+            "y": -7121
+          },
+          "player": {
+            "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+            "name": "Saint",
+            "tag": "2199",
+            "team": "Blue"
+          },
+          "player_locations": []
+        },
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 84
+              },
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 37
+              }
+            ],
+            "stats": {
+              "score": 121,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 4,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 202
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 202
+              },
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 56
+              }
+            ],
+            "stats": {
+              "score": 764,
+              "kills": 3,
+              "headshots": 2,
+              "bodyshots": 0,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 101
+              }
+            ],
+            "stats": {
+              "score": 101,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2100,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 202
+              },
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 202
+              }
+            ],
+            "stats": {
+              "score": 479,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 2,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 101
+              }
+            ],
+            "stats": {
+              "score": 101,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 101
+              }
+            ],
+            "stats": {
+              "score": 101,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2250,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 202
+              },
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 85
+              }
+            ],
+            "stats": {
+              "score": 359,
+              "kills": 2,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1350,
+              "remaining": 0,
+              "weapon": {
+                "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+                "name": "Marshal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "result": "",
+        "ceremony": "CeremonyDefault",
+        "winning_team": "Blue",
+        "plant": null,
+        "defuse": null,
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              }
+            ],
+            "stats": {
+              "score": 280,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 255
+              }
+            ],
+            "stats": {
+              "score": 260,
+              "kills": 1,
+              "headshots": 1,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              }
+            ],
+            "stats": {
+              "score": 300,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6450,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 80
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 80
+              }
+            ],
+            "stats": {
+              "score": 220,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              },
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 200
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              }
+            ],
+            "stats": {
+              "score": 920,
+              "kills": 3,
+              "headshots": 1,
+              "bodyshots": 3,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6400,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 120
+              },
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 150
+              }
+            ],
+            "stats": {
+              "score": 550,
+              "kills": 2,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 6600,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 6300,
+              "remaining": 0,
+              "weapon": {
+                "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+                "name": "Operator",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "result": "Elimination",
+        "ceremony": "CeremonyFlawless",
+        "winning_team": "Blue",
+        "plant": {
+          "round_time_in_ms": 42349,
+          "site": "B",
+          "location": {
+            "x": -3299,
+            "y": -7551
+          },
+          "player": {
+            "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+            "name": "Saint",
+            "tag": "2199",
+            "team": "Blue"
+          },
+          "player_locations": []
+        },
+        "defuse": null,
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 55
+              }
+            ],
+            "stats": {
+              "score": 55,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 55
+              }
+            ],
+            "stats": {
+              "score": 183,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 110
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 159
+              }
+            ],
+            "stats": {
+              "score": 470,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 2,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 55
+              }
+            ],
+            "stats": {
+              "score": 55,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 46
+              }
+            ],
+            "stats": {
+              "score": 46,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 1550,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 159
+              }
+            ],
+            "stats": {
+              "score": 210,
+              "kills": 1,
+              "headshots": 1,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1500,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1700,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 8,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 146
+              }
+            ],
+            "stats": {
+              "score": 190,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 8,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1400,
+              "remaining": 0,
+              "weapon": {
+                "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+                "name": "Sheriff",
+                "type": "Weapon"
+              },
+              "armor": null
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "result": "Elimination",
+        "ceremony": "CeremonyDefault",
+        "winning_team": "Red",
+        "plant": null,
+        "defuse": null,
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 80
+              },
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 74
+              },
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 25
+              },
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 50
+              }
+            ],
+            "stats": {
+              "score": 374,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 7,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 54
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 94
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 87
+              }
+            ],
+            "stats": {
+              "score": 185,
+              "kills": 0,
+              "headshots": 2,
+              "bodyshots": 4,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 87
+              },
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 2,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 121
+              }
+            ],
+            "stats": {
+              "score": 277,
+              "kills": 1,
+              "headshots": 2,
+              "bodyshots": 3,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 67
+              },
+              {
+                "player": {
+                  "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+                  "name": "RudeLeZeb",
+                  "tag": "1003",
+                  "team": "Blue"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 81
+              }
+            ],
+            "stats": {
+              "score": 348,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 3,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 49
+              },
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 87
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 27
+              }
+            ],
+            "stats": {
+              "score": 378,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 3,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 25
+              },
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 81
+              }
+            ],
+            "stats": {
+              "score": 106,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 4,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2100,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 27
+              }
+            ],
+            "stats": {
+              "score": 27,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 3,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 148
+              },
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 4,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 108
+              }
+            ],
+            "stats": {
+              "score": 552,
+              "kills": 2,
+              "headshots": 1,
+              "bodyshots": 7,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2050,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 27
+              },
+              {
+                "player": {
+                  "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+                  "name": "Henrik3",
+                  "tag": "EUW3",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 25
+              },
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 4,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 92
+              }
+            ],
+            "stats": {
+              "score": 144,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 6,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 2250,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 27
+              }
+            ],
+            "stats": {
+              "score": 27,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 1950,
+              "remaining": 0,
+              "weapon": {
+                "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+                "name": "Stinger",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "4dec83d5-4902-9ab3-bed6-a7a390761157",
+                "name": "Light Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "result": "Elimination",
+        "ceremony": "CeremonyFlawless",
+        "winning_team": "Blue",
+        "plant": null,
+        "defuse": null,
+        "stats": [
+          {
+            "player": {
+              "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+              "name": "Byakuya Kuchiki",
+              "tag": "sad",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+              "name": "Henrik3",
+              "tag": "EUW3",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+              "name": "RudeLeZeb",
+              "tag": "1003",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+              "name": "Killua",
+              "tag": "hate",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+                  "name": "nour FPS",
+                  "tag": "0000",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 80
+              }
+            ],
+            "stats": {
+              "score": 80,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 2,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+              "name": "フェルスタッペン",
+              "tag": "1111",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [],
+            "stats": {
+              "score": 0,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+              "name": "PIG3ON",
+              "tag": "EUW",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 120
+              },
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 40
+              }
+            ],
+            "stats": {
+              "score": 160,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 4,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4650,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+              "name": "Excelsior",
+              "tag": "GOFIO",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+                  "name": "PIG3ON",
+                  "tag": "EUW",
+                  "team": "Blue"
+                },
+                "bodyshots": 3,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 110
+              },
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 2,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 109
+              }
+            ],
+            "stats": {
+              "score": 219,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 5,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+              "name": "nour FPS",
+              "tag": "0000",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+                  "name": "フェルスタッペン",
+                  "tag": "1111",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 160
+              },
+              {
+                "player": {
+                  "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+                  "name": "Killua",
+                  "tag": "hate",
+                  "team": "Red"
+                },
+                "bodyshots": 1,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 200
+              },
+              {
+                "player": {
+                  "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+                  "name": "Byakuya Kuchiki",
+                  "tag": "sad",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 150
+              },
+              {
+                "player": {
+                  "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+                  "name": "Excelsior",
+                  "tag": "GOFIO",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 1,
+                "legshots": 0,
+                "damage": 150
+              }
+            ],
+            "stats": {
+              "score": 1150,
+              "kills": 4,
+              "headshots": 4,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4600,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+              "name": "lj0350",
+              "tag": "SNB",
+              "team": "Red"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+                  "name": "Saint",
+                  "tag": "2199",
+                  "team": "Blue"
+                },
+                "bodyshots": 1,
+                "headshots": 0,
+                "legshots": 0,
+                "damage": 32
+              }
+            ],
+            "stats": {
+              "score": 32,
+              "kills": 0,
+              "headshots": 0,
+              "bodyshots": 1,
+              "legshots": 0
+            },
+            "economy": {
+              "loadout_value": 4800,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          },
+          {
+            "player": {
+              "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+              "name": "Saint",
+              "tag": "2199",
+              "team": "Blue"
+            },
+            "ability_casts": {
+              "grenade": null,
+              "ability_1": null,
+              "ability_2": null,
+              "ultimate": null
+            },
+            "damage_events": [
+              {
+                "player": {
+                  "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+                  "name": "lj0350",
+                  "tag": "SNB",
+                  "team": "Red"
+                },
+                "bodyshots": 0,
+                "headshots": 0,
+                "legshots": 1,
+                "damage": 34
+              }
+            ],
+            "stats": {
+              "score": 140,
+              "kills": 1,
+              "headshots": 0,
+              "bodyshots": 0,
+              "legshots": 1
+            },
+            "economy": {
+              "loadout_value": 4500,
+              "remaining": 0,
+              "weapon": {
+                "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+                "name": "Vandal",
+                "type": "Weapon"
+              },
+              "armor": {
+                "id": "822bcab2-40a2-324e-c137-e09195ad7692",
+                "name": "Heavy Shields"
+              }
+            },
+            "was_afk": false,
+            "received_penalty": false,
+            "stayed_in_spawn": false
+          }
+        ]
+      }
+    ],
+    "kills": [
+      {
+        "time_in_round_in_ms": 3388,
+        "time_in_match_in_ms": 33413,
+        "round": 0,
+        "killer": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+          "name": "PIG3ON",
+          "tag": "EUW",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 6171,
+          "y": -5027
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 16734,
+        "time_in_match_in_ms": 46759,
+        "round": 0,
+        "killer": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2740,
+          "y": -7453
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 17572,
+        "time_in_match_in_ms": 47597,
+        "round": 0,
+        "killer": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2037,
+          "y": -8482
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 27081,
+        "time_in_match_in_ms": 57106,
+        "round": 0,
+        "killer": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+          "name": "Henrik3",
+          "tag": "EUW3",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 3532,
+          "y": -6205
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 29230,
+        "time_in_match_in_ms": 59255,
+        "round": 0,
+        "killer": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": -542,
+          "y": -8842
+        },
+        "weapon": {
+          "id": null,
+          "name": "Shock Bolt",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 33769,
+        "time_in_match_in_ms": 63794,
+        "round": 0,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+            "name": "PIG3ON",
+            "tag": "EUW",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": 1345,
+          "y": -6757
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 46850,
+        "time_in_match_in_ms": 76875,
+        "round": 0,
+        "killer": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1589,
+          "y": -8595
+        },
+        "weapon": {
+          "id": "44d4e95c-4157-0037-81b2-17841bf2e8e3",
+          "name": "Frenzy",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 6291,
+        "time_in_match_in_ms": 110201,
+        "round": 1,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 2457,
+          "y": -3918
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 13244,
+        "time_in_match_in_ms": 117154,
+        "round": 1,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1749,
+          "y": -1929
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 25474,
+        "time_in_match_in_ms": 129384,
+        "round": 1,
+        "killer": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 5860,
+          "y": -8313
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 32704,
+        "time_in_match_in_ms": 136614,
+        "round": 1,
+        "killer": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+            "name": "lj0350",
+            "tag": "SNB",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": 4703,
+          "y": -5794
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 33744,
+        "time_in_match_in_ms": 137654,
+        "round": 1,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+            "name": "nour FPS",
+            "tag": "0000",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": 5155,
+          "y": -7116
+        },
+        "weapon": {
+          "id": null,
+          "name": null,
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 43206,
+        "time_in_match_in_ms": 147116,
+        "round": 1,
+        "killer": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 418,
+          "y": -3868
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 94214,
+        "time_in_match_in_ms": 198124,
+        "round": 1,
+        "killer": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+            "name": "PIG3ON",
+            "tag": "EUW",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": -3510,
+          "y": -7538
+        },
+        "weapon": {
+          "id": "c4883e50-4494-202c-3ec3-6b8a9284f00b",
+          "name": "Marshal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 12421,
+        "time_in_match_in_ms": 247509,
+        "round": 2,
+        "killer": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 3362,
+          "y": -5349
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 24313,
+        "time_in_match_in_ms": 259401,
+        "round": 2,
+        "killer": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1442,
+          "y": -8600
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 25390,
+        "time_in_match_in_ms": 260478,
+        "round": 2,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 487,
+          "y": -3769
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 30901,
+        "time_in_match_in_ms": 265989,
+        "round": 2,
+        "killer": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+          "name": "PIG3ON",
+          "tag": "EUW",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+            "name": "lj0350",
+            "tag": "SNB",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": 858,
+          "y": -7245
+        },
+        "weapon": {
+          "id": null,
+          "name": "Hunter's Fury",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 32961,
+        "time_in_match_in_ms": 268049,
+        "round": 2,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 582,
+          "y": -3945
+        },
+        "weapon": {
+          "id": null,
+          "name": "Blade Storm",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 36531,
+        "time_in_match_in_ms": 271619,
+        "round": 2,
+        "killer": {
+          "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+          "name": "Henrik3",
+          "tag": "EUW3",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2856,
+          "y": -6040
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 38563,
+        "time_in_match_in_ms": 273651,
+        "round": 2,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 2023,
+          "y": -3602
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 44825,
+        "time_in_match_in_ms": 279913,
+        "round": 2,
+        "killer": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+          "name": "Henrik3",
+          "tag": "EUW3",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": 790,
+          "y": -7610
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 80568,
+        "time_in_match_in_ms": 315656,
+        "round": 2,
+        "killer": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+            "name": "Excelsior",
+            "tag": "GOFIO",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": 677,
+          "y": -7075
+        },
+        "weapon": {
+          "id": "a03b24d3-4319-996d-0f8c-94bbfba1dfc7",
+          "name": "Operator",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 6629,
+        "time_in_match_in_ms": 348776,
+        "round": 3,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1457,
+          "y": -6363
+        },
+        "weapon": {
+          "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+          "name": "Sheriff",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 11277,
+        "time_in_match_in_ms": 353424,
+        "round": 3,
+        "killer": {
+          "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+          "name": "Henrik3",
+          "tag": "EUW3",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1580,
+          "y": -5898
+        },
+        "weapon": {
+          "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+          "name": "Sheriff",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 25067,
+        "time_in_match_in_ms": 367214,
+        "round": 3,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 4957,
+          "y": -9571
+        },
+        "weapon": {
+          "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+          "name": "Sheriff",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 35653,
+        "time_in_match_in_ms": 377800,
+        "round": 3,
+        "killer": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2407,
+          "y": -8225
+        },
+        "weapon": {
+          "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+          "name": "Sheriff",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 39847,
+        "time_in_match_in_ms": 381994,
+        "round": 3,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 1882,
+          "y": -10617
+        },
+        "weapon": {
+          "id": "e336c6b8-418d-9340-d77f-7a9e4cfe0702",
+          "name": "Sheriff",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 6599,
+        "time_in_match_in_ms": 415626,
+        "round": 4,
+        "killer": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+          "name": "PIG3ON",
+          "tag": "EUW",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2915,
+          "y": -4119
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 13390,
+        "time_in_match_in_ms": 422417,
+        "round": 4,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+            "name": "RudeLeZeb",
+            "tag": "1003",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": 1809,
+          "y": -8629
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 17093,
+        "time_in_match_in_ms": 426120,
+        "round": 4,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+            "name": "RudeLeZeb",
+            "tag": "1003",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": -1151,
+          "y": -6785
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 17739,
+        "time_in_match_in_ms": 426766,
+        "round": 4,
+        "killer": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+            "name": "Byakuya Kuchiki",
+            "tag": "sad",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": 1561,
+          "y": -4203
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": true,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 20046,
+        "time_in_match_in_ms": 429073,
+        "round": 4,
+        "killer": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+            "name": "Henrik3",
+            "tag": "EUW3",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": -1662,
+          "y": -5849
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 22751,
+        "time_in_match_in_ms": 431778,
+        "round": 4,
+        "killer": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+            "name": "lj0350",
+            "tag": "SNB",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": -1054,
+          "y": -7143
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 29698,
+        "time_in_match_in_ms": 438725,
+        "round": 4,
+        "killer": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "54942ced-1967-5f66-8a16-1e0dae875641",
+          "name": "Henrik3",
+          "tag": "EUW3",
+          "team": "Blue"
+        },
+        "assistants": [],
+        "location": {
+          "x": -2495,
+          "y": -3427
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 33979,
+        "time_in_match_in_ms": 443006,
+        "round": 4,
+        "killer": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "victim": {
+          "puuid": "e170e093-7083-5121-8deb-14089911dc40",
+          "name": "RudeLeZeb",
+          "tag": "1003",
+          "team": "Blue"
+        },
+        "assistants": [
+          {
+            "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+            "name": "Byakuya Kuchiki",
+            "tag": "sad",
+            "team": "Red"
+          }
+        ],
+        "location": {
+          "x": -1793,
+          "y": -8462
+        },
+        "weapon": {
+          "id": "f7e1b454-4ad4-1063-ec0a-159e56b58941",
+          "name": "Stinger",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 4158,
+        "time_in_match_in_ms": 474244,
+        "round": 5,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "cd2cb497-a398-5ec9-ab25-7138575b3376",
+          "name": "フェルスタッペン",
+          "tag": "1111",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 762,
+          "y": -5956
+        },
+        "weapon": {
+          "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+          "name": "Vandal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 12800,
+        "time_in_match_in_ms": 482886,
+        "round": 5,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "685fedc8-a950-58ca-9b2c-c9497e0d0fce",
+          "name": "Killua",
+          "tag": "hate",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 6632,
+          "y": -4681
+        },
+        "weapon": {
+          "id": null,
+          "name": "Blade Storm",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 15644,
+        "time_in_match_in_ms": 485730,
+        "round": 5,
+        "killer": {
+          "puuid": "42d470eb-87dd-5cdc-b0a3-0e1e837f480c",
+          "name": "Saint",
+          "tag": "2199",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "321dec1f-e5bd-51ad-9269-6b135a401bfd",
+          "name": "lj0350",
+          "tag": "SNB",
+          "team": "Red"
+        },
+        "assistants": [
+          {
+            "puuid": "f89577a0-d298-516e-ba51-bab4f056a396",
+            "name": "PIG3ON",
+            "tag": "EUW",
+            "team": "Blue"
+          }
+        ],
+        "location": {
+          "x": -2197,
+          "y": -6051
+        },
+        "weapon": {
+          "id": "9c82e19d-4575-0200-1a81-3eacf00cf872",
+          "name": "Vandal",
+          "type": "Weapon"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 20920,
+        "time_in_match_in_ms": 491006,
+        "round": 5,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "97915d11-a1a8-5608-b431-14b8c8697424",
+          "name": "Byakuya Kuchiki",
+          "tag": "sad",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": 5811,
+          "y": -8355
+        },
+        "weapon": {
+          "id": null,
+          "name": "Blade Storm",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      },
+      {
+        "time_in_round_in_ms": 31331,
+        "time_in_match_in_ms": 501417,
+        "round": 5,
+        "killer": {
+          "puuid": "88ba6449-300b-5497-a856-728b704f6883",
+          "name": "nour FPS",
+          "tag": "0000",
+          "team": "Blue"
+        },
+        "victim": {
+          "puuid": "5fc67e77-9e16-5cbf-8fd0-4d5d79ceedd8",
+          "name": "Excelsior",
+          "tag": "GOFIO",
+          "team": "Red"
+        },
+        "assistants": [],
+        "location": {
+          "x": -1557,
+          "y": -9421
+        },
+        "weapon": {
+          "id": null,
+          "name": "Blade Storm",
+          "type": "Ability"
+        },
+        "secondary_fire_mode": false,
+        "player_locations": []
+      }
+    ]
+  }
+}

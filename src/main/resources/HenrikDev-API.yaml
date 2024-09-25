@@ -3104,7 +3104,6 @@ components:
                             id:
                               nullable: true
                               type: string
-                              format: uuid
                             name:
                               nullable: true
                               type: string
@@ -3156,7 +3155,6 @@ components:
                 properties:
                   id:
                     type: string
-                    format: uuid
                   name:
                     nullable: true
                     type: string
@@ -3540,7 +3538,7 @@ paths:
         503:
           $ref: "#/components/responses/503"
         200:
-          description: Account details
+          description: Array of Match data
           content: 
             application/json:
               schema:

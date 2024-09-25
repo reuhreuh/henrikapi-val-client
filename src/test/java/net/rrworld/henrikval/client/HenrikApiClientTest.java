@@ -7,10 +7,12 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 
 import java.io.IOException;
 import java.util.Optional;
+import java.util.UUID;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openapitools.jackson.nullable.JsonNullable;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -20,61 +22,101 @@ import org.springframework.web.client.RestTemplate;
 
 import net.rrworld.henrikval.gen.model.Regions;
 import net.rrworld.henrikval.gen.model.V1mmrh;
+import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
 public class HenrikApiClientTest {
 	
 	private RestTemplate restTemplate;
 	private HenrikApiClient client;
-	private Resource v1MMRHistory;
+	private Resource mmrHistoryV1;
+	private Resource matchV4;
 
 	@BeforeEach
 	public void init() throws IOException {
 		this.restTemplate = new RestTemplateBuilder().build();
 		this.client = new HenrikApiClient("foo-bar-api", restTemplate);
-		this.v1MMRHistory = new ClassPathResource("v1mmrhistory.json");
+		this.mmrHistoryV1 = new ClassPathResource("v1mmrhistory.json");
+		this.matchV4 = new ClassPathResource("v4match.json");
 	}
 	
 	@Test
-	public void getV1PlayerMMRHistory200() {
+	public void getV1PlayerMMRHistory_200() {
 		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
-			.andRespond(withSuccess(v1MMRHistory, MediaType.APPLICATION_JSON));
+			.andRespond(withSuccess(mmrHistoryV1, MediaType.APPLICATION_JSON));
 		
-		Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
-		
+		Optional<V1mmrh> res = client.getPlayerMMRHistoryV1(Regions.EU, "fe067f25-57a5-4f95-81f1-06d96b2290be");
 		
 		// response
 		Assertions.assertTrue(res.isPresent(), "Response is null");
-		
 		V1mmrh mmrh = res.get();
-		
 		// player
 		Assertions.assertEquals("Henrik3", mmrh.getName(), "Wrong player name");
 		Assertions.assertEquals("EUW3", mmrh.getTag(), "Wrong player tag");
-		
 		// history
 		Assertions.assertEquals(1, mmrh.getData().size(), "Wrong history length");
 		Assertions.assertEquals("e5a3301c-c8e5-43bc-be94-a5c0d5275fd4", mmrh.getData().get(0).getMatchId(), "Wrong match id");
 	}
 	
 	@Test
-	public void getV1PlayerMMRHistory400() {
+	public void getV1PlayerMMRHistory_400() {
 		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withBadRequest());
 		
-		Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
+		Optional<V1mmrh> res = client.getPlayerMMRHistoryV1(Regions.EU, "fe067f25-57a5-4f95-81f1-06d96b2290be");
 		
 		Assertions.assertTrue(res.isEmpty(), "Response is not null");
 	}
 	
 	@Test
-	public void getV1PlayerMMRHistory300() {
+	public void getV1PlayerMMRHistory_300() {
 		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withRawStatus(302));
 		
-		Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
+		Optional<V1mmrh> res = client.getPlayerMMRHistoryV1(Regions.EU, "fe067f25-57a5-4f95-81f1-06d96b2290be");
+		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getMatchV4_200() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
+			.andRespond(withSuccess(matchV4, MediaType.APPLICATION_JSON));
+		
+		Optional<ValorantV4MatchRegionMatchidGet200Response> res = client.getMatchV4(Regions.EU, "696848f3-f16f-45bf-af13-e2192f81a600");
+		
+		// response
+		Assertions.assertTrue(res.isPresent(), "Response is null");
+		ValorantV4MatchRegionMatchidGet200Response mr = res.get();
+		// match
+		Assertions.assertNotNull(mr.getData(), "Match data are null");
+		Assertions.assertNotNull(mr.getData().getMetadata(), "Match medatada are null");
+		Assertions.assertEquals(UUID.fromString("696848f3-f16f-45bf-af13-e2192f81a600"), mr.getData().getMetadata().getMatchId(), "Incorrect match id");
+		Assertions.assertFalse(mr.getData().getPlayers().isEmpty(), "Incorrect players count");
+		Assertions.assertEquals(10, mr.getData().getPlayers().size(), "Incorrect players count");
+	}
+	
+	@Test
+	public void getMatchV4_400() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
+			.andRespond(withBadRequest());
+		
+		Optional<ValorantV4MatchRegionMatchidGet200Response> res = client.getMatchV4(Regions.EU, "696848f3-f16f-45bf-af13-e2192f81a600");
+		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getMatchV4_300() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
+			.andRespond(withRawStatus(302));
+		
+		Optional<ValorantV4MatchRegionMatchidGet200Response> res = client.getMatchV4(Regions.EU, "696848f3-f16f-45bf-af13-e2192f81a600");
 		
 		Assertions.assertTrue(res.isEmpty(), "Response is not null");
 	}

@@ -13,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
+import net.rrworld.henrikval.gen.model.Regions;
 import net.rrworld.henrikval.gen.model.V1mmrh;
+import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
 /**
  * Simple Valorant client, using HenrikDev API. It provides:
@@ -51,6 +53,7 @@ public class HenrikApiClient {
 
 	private static final String ROOT_URL = "https://api.henrikdev.xyz";
 	private static final String PLAYER_MMR_HISTORY_URL = ROOT_URL + "/valorant/v1/by-puuid/mmr-history/%s/%s";
+	private static final String MATCH_DETAIL_V4_URL = ROOT_URL + "/valorant/v4/match/%s/%s";
 
 	private String apiKey;
 	private RestTemplate restClient;
@@ -79,9 +82,9 @@ public class HenrikApiClient {
 		this.restClient = restClient;
 	}
 
-	public Optional<V1mmrh> getV1PlayerMMRHistory(final String region, final String puuid) {
+	public Optional<V1mmrh> getPlayerMMRHistoryV1(final Regions region, final String puuid) {
 		LOGGER.info("Retrieving MMR history for player {} in region {}", puuid, region);
-		String url = String.format(PLAYER_MMR_HISTORY_URL, region, puuid);
+		String url = String.format(PLAYER_MMR_HISTORY_URL, region.getValue(), puuid);
 		Optional<V1mmrh> res = null;
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
@@ -94,11 +97,31 @@ public class HenrikApiClient {
 			}
 			res = Optional.ofNullable(response.getBody());
 		} catch (RestClientException e) {
-			LOGGER.error("Error while calling HenrikDev API for getV1PlayerMMRHistory({},{}) : {}", region, puuid, e.getMessage());
+			LOGGER.error("Error while calling MMR history for player {} and region {}. Error : {}", puuid, region, e.getMessage());
 			res = Optional.ofNullable(null);
 		}
 		return res;
-
+	}
+	
+	public Optional<ValorantV4MatchRegionMatchidGet200Response> getMatchV4(final Regions region, final String matchId) {
+		LOGGER.info("Retrieving match {} in region {}", matchId, region);
+		String url = String.format(MATCH_DETAIL_V4_URL, region.getValue(), matchId);
+		Optional<ValorantV4MatchRegionMatchidGet200Response> res = null;
+		try {
+			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
+			ResponseEntity<ValorantV4MatchRegionMatchidGet200Response> response = restClient.exchange(url, HttpMethod.GET, entity, ValorantV4MatchRegionMatchidGet200Response.class);
+			if (HttpStatus.OK == response.getStatusCode()) {
+				LOGGER.info("Match {} found", matchId);
+			} else {
+				LOGGER.warn("Match {} not found. HTTP response code : {}", matchId,
+					response.getStatusCode().value());
+			}
+			res = Optional.ofNullable(response.getBody());
+		} catch (RestClientException e) {
+			LOGGER.error("Error while calling HenrikDev API for match {} and region {}. Error : {}", matchId, region, e.getMessage());
+			res = Optional.ofNullable(null);
+		}
+		return res;
 	}
 
 	private HttpHeaders buildHeaders() {
