@@ -1,19 +1,42 @@
 openapi: "3.0.0"
 info:
-  version: 4.0.0
+  version: 4.1.0
   title: ''
   description: ''
   
 servers:
   # Added by API Auto Mocking Plugin
-  - description: API Server
+  - description: Stable
     url: https://api.henrikdev.xyz
+  - description: Beta
+    url: https://beta.api.henrikdev.xyz
     
 security:
   - ApiKeyAuth: []
 
 components:
   responses:
+    4XX:
+      description: Invalid arguments, planned downtime or not found data
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: integer
+                example: 400
+              errors: 
+                type: array
+                items:
+                  type: object
+                  properties:
+                    message: 
+                      type: string
+                    code:
+                      type: integer
+                    details:
+                      type: string
     400:
       description: Request error by the client (missing query for example)
       content:
@@ -129,6 +152,27 @@ components:
               status:
                 type: integer
                 example: 429
+              errors: 
+                type: array
+                items:
+                  type: object
+                  properties:
+                    message: 
+                      type: string
+                    code:
+                      type: integer
+                    details:
+                      type: string
+    5XX:
+      description: Internal Error of any kind, for more info check the details string
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: integer
+                example: 500
               errors: 
                 type: array
                 items:
@@ -3231,6 +3275,126 @@ components:
           nullable: true
           type: integer
           format: int32
+    v2_stored_mmr_history:
+      type: object
+      properties:
+        status:
+          type: integer
+        results:
+          type: object
+          properties:
+            total: 
+              type: number
+            returned:
+              type: number
+            before:
+              type: number
+            after:
+              type: number
+        data:
+          type: array
+          items:
+            $ref: "#/components/schemas/v2_stored_mmr_history_item"
+    v2_stored_mmr_history_item:
+      type: object
+      properties:
+        match_id: 
+          type: string
+          format: uuid
+        tier:
+          type: object
+          properties:
+            id:
+              type: number
+            name: 
+              $ref: "#/components/schemas/tiers"
+        map:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            name: 
+              $ref: "#/components/schemas/maps"
+        season:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            short: 
+              $ref: "#/components/schemas/seasons"
+        rr:
+          type: number
+        last_change:
+          type: number
+        elo:
+          type: number
+        date:
+          type: string
+          format: date-time
+    v2_mmr_history:
+      type: object
+      properties:
+        status:
+          type: integer
+        data:
+          type: object
+          properties:
+            account:
+              type: object
+              properties:
+                puuid:
+                  type: string
+                  format: uuid
+                name:
+                  type: string
+                  example: Henrik3
+                tag:
+                  type: string
+                  example: VALO
+            history:
+              type: array
+              items:
+                $ref: "#/components/schemas/v2_mmr_history_item"
+    v2_mmr_history_item:
+      type: object
+      properties:
+        match_id: 
+          type: string
+          format: uuid
+        tier:
+          type: object
+          properties:
+            id:
+              type: number
+            name: 
+              $ref: "#/components/schemas/tiers"
+        map:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            name: 
+              $ref: "#/components/schemas/maps"
+        season:
+          type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            short: 
+              $ref: "#/components/schemas/seasons"
+        rr:
+          type: number
+        last_change:
+          type: number
+        elo:
+          type: number
+        date:
+          type: string
+          format: date-time
   securitySchemes:
     ApiKeyAuth:
       type: apiKey
@@ -3519,7 +3683,7 @@ paths:
         minimum: 1
         maximum: 10
     get:
-      description: Get account details
+      description: Get Match History
       responses:
         400:
           $ref: "#/components/responses/400"
@@ -3776,6 +3940,39 @@ paths:
             application/json:
               schema:
                   $ref: "#/components/schemas/v1mmrh"
+  /valorant/v2/by-puuid/mmr-history/{region}/{platform}/{puuid}:
+    parameters:
+    - in: path
+      name: region
+      description: Choose from ap, br, eu, kr, latam, na (br and latam will be internally converted to na)
+      schema: 
+        $ref: "#/components/schemas/affinities"
+      required: true
+    - in: path
+      name: platform
+      description: Platform
+      schema: 
+        $ref: "#/components/schemas/platforms"
+      required: true
+    - in: path
+      name: puuid
+      description: PUUID of the user
+      schema: 
+        type: string
+      required: true
+    get:
+      description: Get MMR History v2
+      responses:
+        4XX:
+          $ref: "#/components/responses/4XX"
+        5XX:
+          $ref: "#/components/responses/5XX"
+        200:
+          description: MMR History Data v2
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/v2_mmr_history"
   /valorant/v1/by-puuid/stored-matches/{region}/{puuid}:
     parameters:
     - in: path
@@ -3882,7 +4079,48 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/v1_lifetime_mmr_history"
-
+  /valorant/v2/by-puuid/stored-mmr-history/{region}/{platform}/{puuid}:
+    parameters:
+    - in: path
+      name: region
+      description: Choose from ap, br, eu, kr, latam, na (br and latam will be internally converted to na)
+      schema: 
+        $ref: "#/components/schemas/affinities"
+      required: true
+    - in: path
+      name: platform
+      required: true
+      schema:
+        $ref: "#/components/schemas/platforms"
+    - in: path
+      name: puuid
+      description: PUUID of the user
+      schema: 
+        type: string
+      required: true
+    - in: query
+      name: page
+      description: The page used in pagination (if this is used, the size query parameter also have to exist)
+      schema:
+        type: integer
+    - in: query
+      name: size
+      description: The amount of mmr changes
+      schema:
+        type: integer
+    get:
+      description: Get all stored mmr history entries from the server
+      responses:
+        4XX:
+          $ref: "#/components/responses/4XX"
+        5XX:
+          $ref: "#/components/responses/5XX"
+        200:
+          description: MMR History Data v2
+          content: 
+            application/json:
+              schema:
+                $ref: "#/components/schemas/v2_stored_mmr_history"
   /valorant/v1/content:
     parameters:
       - in: query
@@ -4644,6 +4882,41 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/v1mmrh"
+  /valorant/v2/mmr-history/{region}/{platform}/{name}/{tag}:
+    parameters:
+      - in: path
+        name: name
+        schema: 
+          type: string
+        required: true
+      - in: path
+        name: tag
+        schema: 
+          type: string
+        required: true
+      - in: path
+        required: true
+        name: region
+        schema:
+          $ref: "#/components/schemas/affinities"
+      - in: path
+        required: true
+        name: platform
+        schema:
+          $ref: "#/components/schemas/platforms"
+    get:
+      description: Get MMR History v2
+      responses:
+        4XX:
+          $ref: "#/components/responses/4XX"
+        5XX:
+          $ref: "#/components/responses/5XX"
+        200:
+          description: MMR History Data v2
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/v2_mmr_history"
   /valorant/v1/mmr/{region}/{name}/{tag}:
     parameters:
       - in: path
@@ -5368,6 +5641,54 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/v1_lifetime_mmr_history"
+  /valorant/v2/stored-mmr-history/{region}/{platform}/{name}/{tag}:
+    parameters:
+    - in: path
+      name: region
+      description: Choose from ap, br, eu, kr, latam, na (br and latam will be internally converted to na)
+      schema: 
+        $ref: "#/components/schemas/affinities"
+      required: true
+    - in: path
+      name: platform
+      required: true
+      schema:
+        $ref: "#/components/schemas/platforms"
+    - in: path
+      name: name
+      description: Name of the user
+      schema: 
+        type: string
+      required: true
+    - in: path
+      name: tag
+      description: Tag of the user
+      schema: 
+        type: string
+      required: true
+    - in: query
+      name: page
+      description: The page used in pagination (if this is used, the size query parameter also have to exist)
+      schema:
+        type: integer
+    - in: query
+      name: size
+      description: The amount of mmr changes
+      schema:
+        type: integer
+    get:
+      description: Get all stored mmr history entries from the server
+      responses:
+        4XX:
+          $ref: "#/components/responses/4XX"
+        5XX:
+          $ref: "#/components/responses/5XX"
+        200:
+          description: MMR History Data v2
+          content: 
+            application/json:
+              schema:
+                $ref: "#/components/schemas/v2_stored_mmr_history"
   /valorant/v1/store-featured:
     get:
       responses:

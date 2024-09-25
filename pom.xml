@@ -139,7 +139,7 @@
 		                <configuration>
 		                    <api>HenrikDev-API</api>
 		                    <owner>Henrik-3</owner>
-		                    <version>4.0.0</version>
+		                    <version>4.1.0</version>
 		                    <format>yaml</format>
 		                    <outputFile>${project.basedir}/src/main/resources/HenrikDev-API.yaml</outputFile>
 		                    <!-- 

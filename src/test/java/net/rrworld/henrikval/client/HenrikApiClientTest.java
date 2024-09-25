@@ -12,7 +12,6 @@ import java.util.UUID;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.openapitools.jackson.nullable.JsonNullable;
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
@@ -21,6 +20,7 @@ import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
 import net.rrworld.henrikval.gen.model.Regions;
+import net.rrworld.henrikval.gen.model.V1PremierTeam;
 import net.rrworld.henrikval.gen.model.V1mmrh;
 import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
@@ -30,6 +30,7 @@ public class HenrikApiClientTest {
 	private HenrikApiClient client;
 	private Resource mmrHistoryV1;
 	private Resource matchV4;
+	private Resource premierTeamV1;
 
 	@BeforeEach
 	public void init() throws IOException {
@@ -37,6 +38,7 @@ public class HenrikApiClientTest {
 		this.client = new HenrikApiClient("foo-bar-api", restTemplate);
 		this.mmrHistoryV1 = new ClassPathResource("v1mmrhistory.json");
 		this.matchV4 = new ClassPathResource("v4match.json");
+		this.premierTeamV1 = new ClassPathResource("v1PremierTeam.json");
 	}
 	
 	@Test
@@ -117,6 +119,47 @@ public class HenrikApiClientTest {
 			.andRespond(withRawStatus(302));
 		
 		Optional<ValorantV4MatchRegionMatchidGet200Response> res = client.getMatchV4(Regions.EU, "696848f3-f16f-45bf-af13-e2192f81a600");
+		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getPremierTeamV1_200() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
+			.andRespond(withSuccess(premierTeamV1, MediaType.APPLICATION_JSON));
+		
+		Optional<V1PremierTeam> res = client.getPremierTeamV1("GoodGame","gg");
+		
+		// response
+		Assertions.assertTrue(res.isPresent(), "Response is null");
+		V1PremierTeam mr = res.get();
+		// Premier Team
+		Assertions.assertNotNull(mr.getData(), "Premier Team data are null");
+		Assertions.assertEquals(UUID.fromString("58df4050-7792-40e4-94f9-204279ed9c6d"), mr.getData().getId(), "team id is not correct");
+		Assertions.assertEquals("GoodGame", mr.getData().getName(), "Wrong name");
+		Assertions.assertEquals("gg", mr.getData().getTag(), "Wrong tag");
+		
+	}
+	
+	@Test
+	public void getPremierTeamV1_400() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
+			.andRespond(withBadRequest());
+		
+		Optional<V1PremierTeam> res = client.getPremierTeamV1("GoodGame","gg");
+		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getPremierTeamV1_300() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
+			.andRespond(withRawStatus(302));
+		
+		Optional<V1PremierTeam> res = client.getPremierTeamV1("GoodGame","gg");
 		
 		Assertions.assertTrue(res.isEmpty(), "Response is not null");
 	}

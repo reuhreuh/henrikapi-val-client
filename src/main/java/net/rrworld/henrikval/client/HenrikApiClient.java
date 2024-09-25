@@ -14,6 +14,7 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import net.rrworld.henrikval.gen.model.Regions;
+import net.rrworld.henrikval.gen.model.V1PremierTeam;
 import net.rrworld.henrikval.gen.model.V1mmrh;
 import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
@@ -54,6 +55,7 @@ public class HenrikApiClient {
 	private static final String ROOT_URL = "https://api.henrikdev.xyz";
 	private static final String PLAYER_MMR_HISTORY_URL = ROOT_URL + "/valorant/v1/by-puuid/mmr-history/%s/%s";
 	private static final String MATCH_DETAIL_V4_URL = ROOT_URL + "/valorant/v4/match/%s/%s";
+	private static final String PREMIER_TEAM_V1_URL = ROOT_URL + "/valorant/v1/premier/%s/%s";
 
 	private String apiKey;
 	private RestTemplate restClient;
@@ -119,6 +121,26 @@ public class HenrikApiClient {
 			res = Optional.ofNullable(response.getBody());
 		} catch (RestClientException e) {
 			LOGGER.error("Error while calling HenrikDev API for match {} and region {}. Error : {}", matchId, region, e.getMessage());
+			res = Optional.ofNullable(null);
+		}
+		return res;
+	}
+	
+	public Optional<V1PremierTeam> getPremierTeamV1(final String teamName, final String teamTag){
+		LOGGER.info("Retrieving Premier team {}#{} in region {}", teamName, teamTag);
+		String url = String.format(PREMIER_TEAM_V1_URL, teamName, teamTag);
+		Optional<V1PremierTeam> res = null;
+		try {
+			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
+			ResponseEntity<V1PremierTeam> response = restClient.exchange(url, HttpMethod.GET, entity, V1PremierTeam.class);
+			if (HttpStatus.OK == response.getStatusCode()) {
+				LOGGER.info("Premier team {}#{} found", teamName, teamTag);
+			} else {
+				LOGGER.warn("Premier team {}#{} not found. HTTP response code : {}", teamName, teamTag,	response.getStatusCode().value());
+			}
+			res = Optional.ofNullable(response.getBody());
+		} catch (RestClientException e) {
+			LOGGER.error("Error while calling HenrikDev API Premier team {}#{}. Error : {}", teamName, teamTag, e.getMessage());
 			res = Optional.ofNullable(null);
 		}
 		return res;

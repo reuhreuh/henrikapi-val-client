@@ -1,0 +1,30 @@
+{
+  "status": 200,
+  "data": {
+    "id": "58df4050-7792-40e4-94f9-204279ed9c6d",
+    "name": "GoodGame",
+    "tag": "gg",
+    "enrolled": true,
+    "stats": {
+      "wins": 2,
+      "matches": 6,
+      "losses": 4,
+      "rounds_won": 58,
+      "rounds_lost": 70
+    },
+    "placement": {
+      "points": 300,
+      "conference": "EU_FRANCE",
+      "division": 17,
+      "place": 26
+    },
+    "customization": {
+      "icon": "e1cf0b57-41a2-76b7-8eb3-52859341e999",
+      "image": "https://cdn.henrikdev.xyz/valorant/v1/premier/team-icon/e1cf0b57-41a2-76b7-8eb3-52859341e999?primary=730a0a&secondary=ece8e1&tertiary=ece8e1",
+      "primary": "#730a0a",
+      "secondary": "#ece8e1",
+      "tertiary": "#ece8e1"
+    },
+    "member": []
+  }
+}
