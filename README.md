@@ -45,7 +45,7 @@ Import dependency in your `pom.xml` :
 <properties>
   ...
   <!-- Use the latest version whenever possible. -->
-  <henrikval.client.version>1.0.0-SNAPSHOT</henrikval.client.version>
+  <henrikval.client.version>1.0.0</henrikval.client.version>
   ...
 </properties>
 
@@ -81,5 +81,5 @@ public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${h
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
 
 ## Changelog
-### v1.0.0 (TBD)
+### v1.0.0 (2024-09-26)
 - First release with just 3 end-points
