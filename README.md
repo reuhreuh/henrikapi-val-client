@@ -81,5 +81,7 @@ public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${h
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
 
 ## Changelog
+### v1.0.1 (TBD)
+- New endpoints :D
 ### v1.0.0 (2024-09-26)
 - First release with just 3 end-points
