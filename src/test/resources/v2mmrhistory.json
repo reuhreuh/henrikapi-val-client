@@ -1,0 +1,50 @@
+{
+  "status": 200,
+  "data": {
+    "account": {
+      "name": "SpawN",
+      "tag": "SK",
+      "puuid": "c6bd5d66-f629-410b-939b-9928c837f256"
+    },
+    "history": [
+      {
+        "tier": {
+          "id": 17,
+          "name": "Platinum 3"
+        },
+        "match_id": "94fa603d-012f-45be-8b7f-7d8e0188adad",
+        "map": {
+          "id": "d960549e-485c-e861-8d71-aa9d1aed12a2",
+          "name": "Split"
+        },
+        "season": {
+          "id": "476b0893-4c2e-abd6-c5fe-708facff0772",
+          "short": "e10a1"
+        },
+        "rr": 22,
+        "last_change": 15,
+        "elo": 1422,
+        "date": "2025-03-02T22:52:13.874Z"
+      },
+      {
+        "tier": {
+          "id": 17,
+          "name": "Platinum 3"
+        },
+        "match_id": "b3cf1459-f21e-42c7-9f0e-e15d102b27a3",
+        "map": {
+          "id": "b529448b-4d60-346e-e89e-00a4c527a405",
+          "name": "Fracture"
+        },
+        "season": {
+          "id": "476b0893-4c2e-abd6-c5fe-708facff0772",
+          "short": "e10a1"
+        },
+        "rr": 7,
+        "last_change": -22,
+        "elo": 1407,
+        "date": "2025-03-02T22:20:47.415Z"
+      }
+    ]
+  }
+}

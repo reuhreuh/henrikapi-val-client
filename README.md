@@ -21,6 +21,7 @@ So far following end-points are implemented:
 
 `Player`
 - /valorant/v1/by-puuid/mmr-history/{region}/{puuid}
+- /valorant/v2/by-puuid/mmr-history/{region}/{platform}/{puuid}
 
 `Match`
 - /valorant/v4/match/{region}/{matchid}

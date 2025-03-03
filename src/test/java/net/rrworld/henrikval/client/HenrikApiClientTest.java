@@ -19,9 +19,11 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
+import net.rrworld.henrikval.gen.model.Platforms;
 import net.rrworld.henrikval.gen.model.Regions;
 import net.rrworld.henrikval.gen.model.V1PremierTeam;
 import net.rrworld.henrikval.gen.model.V1mmrh;
+import net.rrworld.henrikval.gen.model.V2MmrHistory;
 import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
 public class HenrikApiClientTest {
@@ -29,6 +31,7 @@ public class HenrikApiClientTest {
 	private RestTemplate restTemplate;
 	private HenrikApiClient client;
 	private Resource mmrHistoryV1;
+	private Resource mmrHistoryV2;
 	private Resource matchV4;
 	private Resource premierTeamV1;
 
@@ -37,6 +40,7 @@ public class HenrikApiClientTest {
 		this.restTemplate = new RestTemplateBuilder().build();
 		this.client = new HenrikApiClient("foo-bar-api", restTemplate);
 		this.mmrHistoryV1 = new ClassPathResource("v1mmrhistory.json");
+		this.mmrHistoryV2 = new ClassPathResource("v2mmrhistory.json");
 		this.matchV4 = new ClassPathResource("v4match.json");
 		this.premierTeamV1 = new ClassPathResource("v1PremierTeam.json");
 	}
@@ -79,6 +83,38 @@ public class HenrikApiClientTest {
 		
 		Optional<V1mmrh> res = client.getPlayerMMRHistoryV1(Regions.EU, "fe067f25-57a5-4f95-81f1-06d96b2290be");
 		
+		Assertions.assertTrue(res.isEmpty(), "Response is not null");
+	}
+	
+	@Test
+	public void getV2PlayerMMRHistory_200() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v2/by-puuid/mmr-history/eu/pc/c6bd5d66-f629-410b-939b-9928c837f256"))
+			.andRespond(withSuccess(mmrHistoryV2, MediaType.APPLICATION_JSON));
+		
+		Optional<V2MmrHistory> res = client.getPlayerMMRHistoryV2(Regions.EU, Platforms.PC, "c6bd5d66-f629-410b-939b-9928c837f256");
+		
+		// response
+		Assertions.assertTrue(res.isPresent(), "Response is null");
+		V2MmrHistory mmrh = res.get();
+		// player
+		Assertions.assertEquals("SpawN", mmrh.getData().getAccount().getName(), "Wrong player name");
+		Assertions.assertEquals("SK", mmrh.getData().getAccount().getTag(), "Wrong player tag");
+		Assertions.assertEquals(UUID.fromString("c6bd5d66-f629-410b-939b-9928c837f256"), mmrh.getData().getAccount().getPuuid(), "Wrong player id");
+		// history
+		Assertions.assertEquals(2, mmrh.getData().getHistory().size(), "Wrong history length");
+		Assertions.assertEquals(UUID.fromString("94fa603d-012f-45be-8b7f-7d8e0188adad"), mmrh.getData().getHistory().get(0).getMatchId(), "Wrong match id");
+	}
+	
+	@Test
+	public void getV2PlayerMMRHistory_404() {
+		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
+		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v2/by-puuid/mmr-history/eu/pc/c6bd5d66-f629-410b-939b-9928c837f256"))
+		.andRespond(withRawStatus(404));
+		
+		Optional<V2MmrHistory> res = client.getPlayerMMRHistoryV2(Regions.EU, Platforms.PC, "c6bd5d66-f629-410b-939b-9928c837f256");
+		
+		// response
 		Assertions.assertTrue(res.isEmpty(), "Response is not null");
 	}
 	

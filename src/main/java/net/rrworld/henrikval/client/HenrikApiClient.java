@@ -13,9 +13,11 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
+import net.rrworld.henrikval.gen.model.Platforms;
 import net.rrworld.henrikval.gen.model.Regions;
 import net.rrworld.henrikval.gen.model.V1PremierTeam;
 import net.rrworld.henrikval.gen.model.V1mmrh;
+import net.rrworld.henrikval.gen.model.V2MmrHistory;
 import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
 
 /**
@@ -54,6 +56,7 @@ public class HenrikApiClient {
 
 	private static final String ROOT_URL = "https://api.henrikdev.xyz";
 	private static final String PLAYER_MMR_HISTORY_URL = ROOT_URL + "/valorant/v1/by-puuid/mmr-history/%s/%s";
+	private static final String PLAYER_MMR_HISTORY_V2_URL = ROOT_URL + "/valorant/v2/by-puuid/mmr-history/%s/%s/%s";
 	private static final String MATCH_DETAIL_V4_URL = ROOT_URL + "/valorant/v4/match/%s/%s";
 	private static final String PREMIER_TEAM_V1_URL = ROOT_URL + "/valorant/v1/premier/%s/%s";
 
@@ -100,6 +103,27 @@ public class HenrikApiClient {
 			res = Optional.ofNullable(response.getBody());
 		} catch (RestClientException e) {
 			LOGGER.error("Error while calling MMR history for player {} and region {}. Error : {}", puuid, region, e.getMessage());
+			res = Optional.ofNullable(null);
+		}
+		return res;
+	}
+	
+	public Optional<V2MmrHistory> getPlayerMMRHistoryV2(final Regions region, final Platforms platform, String puuid) {
+		LOGGER.info("Retrieving MMR history V2 for player {} in region {}", puuid, region);
+		String url = String.format(PLAYER_MMR_HISTORY_V2_URL, region.getValue(), platform.getValue() ,puuid);
+		Optional<V2MmrHistory> res = null;
+		try {
+			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
+			ResponseEntity<V2MmrHistory> response = restClient.exchange(url, HttpMethod.GET, entity, V2MmrHistory.class);
+			if (HttpStatus.OK == response.getStatusCode()) {
+				LOGGER.info("MMR history V2 for player {} found", puuid);
+			} else {
+				LOGGER.warn("MMR history V2 for player {} not found. HTTP response code : {}", puuid,
+					response.getStatusCode().value());
+			}
+			res = Optional.ofNullable(response.getBody());
+		} catch (RestClientException e) {
+			LOGGER.error("Error while calling MMR history V2 for player {} and region {}. Error : {}", puuid, region, e.getMessage());
 			res = Optional.ofNullable(null);
 		}
 		return res;

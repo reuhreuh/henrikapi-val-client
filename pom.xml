@@ -152,7 +152,7 @@
 		    <plugin>
 			    <groupId>org.openapitools</groupId>
 			    <artifactId>openapi-generator-maven-plugin</artifactId>
-		    	<version>7.8.0</version>
+		    	<version>7.12.0</version>
 			    <executions>
 			        <execution>
 			            <goals>
@@ -178,6 +178,7 @@
 			                	<openApiNullable>false</openApiNullable>
 			                	<useOptional>false</useOptional>
 			                	<useEnumCaseInsensitive>true</useEnumCaseInsensitive>
+			                	<enumUnknownDefaultCase>true</enumUnknownDefaultCase>
 			                </configOptions>
 			            </configuration>
 			        </execution>
