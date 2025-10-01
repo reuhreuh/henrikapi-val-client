@@ -55,16 +55,19 @@
 			<groupId>io.swagger</groupId>
 			<artifactId>swaggerhub-maven-plugin</artifactId>
 			<version>1.0.10</version>
-		</dependency>
-		<dependency>
-		    <groupId>org.openapitools</groupId>
-		    <artifactId>jackson-databind-nullable</artifactId>
-		    <version>0.2.6</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 		    <groupId>org.springdoc</groupId>
 		    <artifactId>springdoc-openapi-ui</artifactId>
 		    <version>1.8.0</version>
+		    <scope>provided</scope>
+		</dependency>
+		<dependency>
+		    <groupId>org.openapitools</groupId>
+		    <artifactId>jackson-databind-nullable</artifactId>
+		    <version>0.2.6</version>
+		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
 
@@ -148,6 +151,8 @@
 		                </configuration>
 		            </execution>
 		        </executions>
+			    <dependencies>
+			    </dependencies>
 		    </plugin>
 		    <plugin>
 			    <groupId>org.openapitools</groupId>
@@ -185,6 +190,8 @@
 			            </configuration>
 			        </execution>
 			    </executions>
+			    <dependencies>
+			    </dependencies>
 			</plugin>
 		</plugins>
 	</build>
