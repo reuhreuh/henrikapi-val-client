@@ -139,7 +139,7 @@
 		                <configuration>
 		                    <api>HenrikDev-API</api>
 		                    <owner>Henrik-3</owner>
-		                    <version>4.1.0</version>
+		                    <version>4.2.0</version>
 		                    <format>yaml</format>
 		                    <outputFile>${project.basedir}/src/main/resources/HenrikDev-API.yaml</outputFile>
 		                    <!-- 
@@ -174,11 +174,13 @@
 			                <generateApiDocumentation>false</generateApiDocumentation>
 			                <generateSupportingFiles>false</generateSupportingFiles>
 			                <!--configHelp>true</configHelp-->
+			                <!--https://openapi-generator.tech/docs/generator-->
 			                <configOptions>
 			                	<openApiNullable>false</openApiNullable>
 			                	<useOptional>false</useOptional>
 			                	<useEnumCaseInsensitive>true</useEnumCaseInsensitive>
 			                	<enumUnknownDefaultCase>true</enumUnknownDefaultCase>
+			                	<additionalModelTypeAnnotations>@com.fasterxml.jackson.annotation.JsonIgnoreProperties(ignoreUnknown = true)</additionalModelTypeAnnotations>
 			                </configOptions>
 			            </configuration>
 			        </execution>
