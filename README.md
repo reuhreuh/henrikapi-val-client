@@ -46,7 +46,7 @@ Import dependency in your `pom.xml` :
 <properties>
   ...
   <!-- Use the latest version whenever possible. -->
-  <henrikval.client.version>1.0.0</henrikval.client.version>
+  <henrikval.client.version>1.1.0</henrikval.client.version>
   ...
 </properties>
 
@@ -82,7 +82,8 @@ public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${h
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
 
 ## Changelog
-### v1.0.1 (TBD)
-- New endpoints :D
+### v1.1.0 (TBD)
+- Change OAS source (swaggerhub.com -> api.henrikdev.xyz)
+- Model 4.4.1 update (No more enums :( )
 ### v1.0.0 (2024-09-26)
 - First release with just 3 end-points
