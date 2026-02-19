@@ -13,12 +13,10 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import net.rrworld.henrikval.gen.model.Platforms;
-import net.rrworld.henrikval.gen.model.Regions;
-import net.rrworld.henrikval.gen.model.V1PremierTeam;
-import net.rrworld.henrikval.gen.model.V1mmrh;
-import net.rrworld.henrikval.gen.model.V2MmrHistory;
-import net.rrworld.henrikval.gen.model.ValorantV4MatchRegionMatchidGet200Response;
+import net.rrworld.henrikval.gen.model.MMRHistoryV1Response;
+import net.rrworld.henrikval.gen.model.MMRHistoryV2Response;
+import net.rrworld.henrikval.gen.model.MatchesV4Response;
+import net.rrworld.henrikval.gen.model.PremierTeamV1Response;
 
 /**
  * Simple Valorant client, using HenrikDev API. It provides:
@@ -87,13 +85,13 @@ public class HenrikApiClient {
 		this.restClient = restClient;
 	}
 
-	public Optional<V1mmrh> getPlayerMMRHistoryV1(final Regions region, final String puuid) {
+	public Optional<MMRHistoryV1Response> getPlayerMMRHistoryV1(final String region, final String puuid) {
 		LOGGER.info("Retrieving MMR history for player {} in region {}", puuid, region);
-		String url = String.format(PLAYER_MMR_HISTORY_URL, region.getValue(), puuid);
-		Optional<V1mmrh> res = null;
+		String url = String.format(PLAYER_MMR_HISTORY_URL, region, puuid);
+		Optional<MMRHistoryV1Response> res = null;
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<V1mmrh> response = restClient.exchange(url, HttpMethod.GET, entity, V1mmrh.class);
+			ResponseEntity<MMRHistoryV1Response> response = restClient.exchange(url, HttpMethod.GET, entity, MMRHistoryV1Response.class);
 			if (HttpStatus.OK == response.getStatusCode()) {
 				LOGGER.info("MMR history for player {} found", puuid);
 			} else {
@@ -108,13 +106,13 @@ public class HenrikApiClient {
 		return res;
 	}
 	
-	public Optional<V2MmrHistory> getPlayerMMRHistoryV2(final Regions region, final Platforms platform, String puuid) {
+	public Optional<MMRHistoryV2Response> getPlayerMMRHistoryV2(final String region, final String platform, String puuid) {
 		LOGGER.info("Retrieving MMR history V2 for player {} in region {}", puuid, region);
-		String url = String.format(PLAYER_MMR_HISTORY_V2_URL, region.getValue(), platform.getValue() ,puuid);
-		Optional<V2MmrHistory> res = null;
+		String url = String.format(PLAYER_MMR_HISTORY_V2_URL, region, platform ,puuid);
+		Optional<MMRHistoryV2Response> res = null;
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<V2MmrHistory> response = restClient.exchange(url, HttpMethod.GET, entity, V2MmrHistory.class);
+			ResponseEntity<MMRHistoryV2Response> response = restClient.exchange(url, HttpMethod.GET, entity, MMRHistoryV2Response.class);
 			if (HttpStatus.OK == response.getStatusCode()) {
 				LOGGER.info("MMR history V2 for player {} found", puuid);
 			} else {
@@ -129,13 +127,13 @@ public class HenrikApiClient {
 		return res;
 	}
 	
-	public Optional<ValorantV4MatchRegionMatchidGet200Response> getMatchV4(final Regions region, final String matchId) {
+	public Optional<MatchesV4Response> getMatchV4(final String region, final String matchId) {
 		LOGGER.info("Retrieving match {} in region {}", matchId, region);
-		String url = String.format(MATCH_DETAIL_V4_URL, region.getValue(), matchId);
-		Optional<ValorantV4MatchRegionMatchidGet200Response> res = null;
+		String url = String.format(MATCH_DETAIL_V4_URL, region, matchId);
+		Optional<MatchesV4Response> res = null;
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<ValorantV4MatchRegionMatchidGet200Response> response = restClient.exchange(url, HttpMethod.GET, entity, ValorantV4MatchRegionMatchidGet200Response.class);
+			ResponseEntity<MatchesV4Response> response = restClient.exchange(url, HttpMethod.GET, entity, MatchesV4Response.class);
 			if (HttpStatus.OK == response.getStatusCode()) {
 				LOGGER.info("Match {} found", matchId);
 			} else {
@@ -150,13 +148,13 @@ public class HenrikApiClient {
 		return res;
 	}
 	
-	public Optional<V1PremierTeam> getPremierTeamV1(final String teamName, final String teamTag){
+	public Optional<PremierTeamV1Response> getPremierTeamV1(final String teamName, final String teamTag){
 		LOGGER.info("Retrieving Premier team {}#{} in region {}", teamName, teamTag);
 		String url = String.format(PREMIER_TEAM_V1_URL, teamName, teamTag);
-		Optional<V1PremierTeam> res = null;
+		Optional<PremierTeamV1Response> res = null;
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<V1PremierTeam> response = restClient.exchange(url, HttpMethod.GET, entity, V1PremierTeam.class);
+			ResponseEntity<PremierTeamV1Response> response = restClient.exchange(url, HttpMethod.GET, entity, PremierTeamV1Response.class);
 			if (HttpStatus.OK == response.getStatusCode()) {
 				LOGGER.info("Premier team {}#{} found", teamName, teamTag);
 			} else {

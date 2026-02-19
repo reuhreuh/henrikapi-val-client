@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.rr-world</groupId>
 	<artifactId>henrikapi-val-client</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.1.0</version>
 	<packaging>jar</packaging>
 	<name>henrikapi-val-client</name>
 	<description>Valorant Java client based on HenrikDev-API</description>
@@ -50,12 +50,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>io.swagger</groupId>
-			<artifactId>swaggerhub-maven-plugin</artifactId>
-			<version>1.0.10</version>
-			<scope>provided</scope>
 		</dependency>
 		<dependency>
 		    <groupId>org.springdoc</groupId>
@@ -130,50 +124,19 @@
 			</plugin>
 			<!-- Code Gen -->
 		    <plugin>
-		        <groupId>io.swagger</groupId>
-		        <artifactId>swaggerhub-maven-plugin</artifactId>
-		        <version>1.0.10</version>
-		        <executions>
-		            <execution>
-		                <phase>generate-resources</phase>
-		                <goals>
-		                    <goal>download</goal>
-		                </goals>
-		                <configuration>
-		                    <api>HenrikDev-API</api>
-		                    <owner>Henrik-3</owner>
-		                    <version>4.2.0</version>
-		                    <format>yaml</format>
-		                    <outputFile>${project.basedir}/src/main/resources/HenrikDev-API.yaml</outputFile>
-		                    <!-- 
-		                    <outputFile>${project.build.directory}/HenrikDev-API.yaml</outputFile>
-		                    -->
-		                </configuration>
-		            </execution>
-		        </executions>
-			    <dependencies>
-			    </dependencies>
-		    </plugin>
-		    <plugin>
 			    <groupId>org.openapitools</groupId>
 			    <artifactId>openapi-generator-maven-plugin</artifactId>
-		    	<version>7.12.0</version>
+		    	<version>7.19.0</version>
 			    <executions>
 			        <execution>
 			            <goals>
 			                <goal>generate</goal>
 			            </goals>
 			            <configuration>
-			            	<!--
-			            	<inputSpec>
-			            		${project.build.directory}/HenrikDev-API.yaml
-			            	</inputSpec>
-			            	--> 
-			                <inputSpec>
-			                    ${project.basedir}/src/main/resources/HenrikDev-API.yaml
-			                </inputSpec>
+			                <inputSpec>https://api.henrikdev.xyz/openapi.json</inputSpec>
 			                <generatorName>spring</generatorName>
 			                <modelPackage>net.rrworld.henrikval.gen.model</modelPackage>
+			                <skipValidateSpec>true</skipValidateSpec>
 			                <generateApis>false</generateApis>
 			                <generateApiTests>false</generateApiTests>
 			                <generateApiDocumentation>false</generateApiDocumentation>
@@ -248,7 +211,6 @@
 
 	<!-- properties -->
 	<properties>
-		<resilience4j.version>1.7.1</resilience4j.version>
 		<jacoco.plugin.version>0.8.8</jacoco.plugin.version>
 		<maven.gpg.version>3.2.4</maven.gpg.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
