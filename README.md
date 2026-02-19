@@ -29,7 +29,7 @@ So far following end-points are implemented:
 `Premier`
 - /valorant/v1/premier/{team_name}/{team_tag}
 
-The SDK also provides a complete API model, generated from the [Swagger definition](https://app.swaggerhub.com/apis-docs/Henrik-3/HenrikDev-API).
+The SDK also provides a complete API model, generated from the [Swagger definition](https://api.henrikdev.xyz/docs).
 
 
 ## Getting started
