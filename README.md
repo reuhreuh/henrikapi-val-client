@@ -82,6 +82,8 @@ public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${h
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
 
 ## Changelog
+### v1.1.1 (TBD)
+- ...
 ### v1.1.0 (2026-02-19)
 - Change OAS source (swaggerhub.com -> https://api.henrikdev.xyz/docs)
 - Model 4.6.0 update (No more enums :( )
