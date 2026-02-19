@@ -156,6 +156,18 @@
 			    <dependencies>
 			    </dependencies>
 			</plugin>
+			<!-- Release management -->
+			<plugin>
+				<groupId>org.sonatype.central</groupId>
+				<artifactId>central-publishing-maven-plugin</artifactId>
+				<version>0.8.0</version>
+				<extensions>true</extensions>
+				<configuration>
+					<publishingServerId>central</publishingServerId>
+             		<autoPublish>true</autoPublish>
+             		<waitUntil>published</waitUntil>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 
@@ -165,16 +177,6 @@
 		<developerConnection>scm:git:git@github.com:reuhreuh/henrikapi-val-client.git</developerConnection>
 		<url>https://github.com/reuhreuh/henrikapi-val-client/tree/master</url>
 	</scm>
-	<distributionManagement>
-		<snapshotRepository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-		</snapshotRepository>
-		<repository>
-			<id>ossrh</id>
-			<url>https://s01.oss.sonatype.org/service/local/staging/deploy/maven2</url>
-		</repository>
-	</distributionManagement>
 
 	<!-- Profiles -->
 	<profiles>
