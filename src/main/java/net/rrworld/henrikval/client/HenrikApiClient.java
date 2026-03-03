@@ -52,12 +52,6 @@ public class HenrikApiClient {
 
 	private final Logger LOGGER = LoggerFactory.getLogger(HenrikApiClient.class);
 
-	private static final String ROOT_URL = "https://api.henrikdev.xyz";
-	private static final String PLAYER_MMR_HISTORY_URL = ROOT_URL + "/valorant/v1/by-puuid/mmr-history/%s/%s";
-	private static final String PLAYER_MMR_HISTORY_V2_URL = ROOT_URL + "/valorant/v2/by-puuid/mmr-history/%s/%s/%s";
-	private static final String MATCH_DETAIL_V4_URL = ROOT_URL + "/valorant/v4/match/%s/%s";
-	private static final String PREMIER_TEAM_V1_URL = ROOT_URL + "/valorant/v1/premier/%s/%s";
-
 	private String apiKey;
 	private RestTemplate restClient;
 
@@ -70,7 +64,7 @@ public class HenrikApiClient {
 	 * @param apiKey the HenrikDev API key
 	 */
 	public HenrikApiClient(final String apiKey) {
-		this(apiKey, new RestTemplateBuilder().build());
+		this(apiKey, new RestTemplateBuilder().rootUri(HenrikURL.ROOT_URL).build());
 	}
 
 	/**
@@ -85,87 +79,41 @@ public class HenrikApiClient {
 		this.restClient = restClient;
 	}
 
-	public Optional<MMRHistoryV1Response> getPlayerMMRHistoryV1(final String region, final String puuid) {
-		LOGGER.info("Retrieving MMR history for player {} in region {}", puuid, region);
-		String url = String.format(PLAYER_MMR_HISTORY_URL, region, puuid);
-		Optional<MMRHistoryV1Response> res = null;
-		try {
-			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<MMRHistoryV1Response> response = restClient.exchange(url, HttpMethod.GET, entity, MMRHistoryV1Response.class);
-			if (HttpStatus.OK == response.getStatusCode()) {
-				LOGGER.info("MMR history for player {} found", puuid);
-			} else {
-				LOGGER.warn("MMR history for player {} not found. HTTP response code : {}", puuid,
-					response.getStatusCode().value());
-			}
-			res = Optional.ofNullable(response.getBody());
-		} catch (RestClientException e) {
-			LOGGER.error("Error while calling MMR history for player {} and region {}. Error : {}", puuid, region, e.getMessage());
-			res = Optional.ofNullable(null);
-		}
-		return res;
+	public Optional<MMRHistoryV1Response> getPlayerMMRHistoryV1(String region, String puuid) {
+		return executeGet(String.format(HenrikURL.MMR_HISTORY_V1_BY_ID_URL, region, puuid), MMRHistoryV1Response.class,
+				"MMR history for player " + puuid + " in region " + region);
 	}
-	
-	public Optional<MMRHistoryV2Response> getPlayerMMRHistoryV2(final String region, final String platform, String puuid) {
-		LOGGER.info("Retrieving MMR history V2 for player {} in region {}", puuid, region);
-		String url = String.format(PLAYER_MMR_HISTORY_V2_URL, region, platform ,puuid);
-		Optional<MMRHistoryV2Response> res = null;
-		try {
-			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<MMRHistoryV2Response> response = restClient.exchange(url, HttpMethod.GET, entity, MMRHistoryV2Response.class);
-			if (HttpStatus.OK == response.getStatusCode()) {
-				LOGGER.info("MMR history V2 for player {} found", puuid);
-			} else {
-				LOGGER.warn("MMR history V2 for player {} not found. HTTP response code : {}", puuid,
-					response.getStatusCode().value());
-			}
-			res = Optional.ofNullable(response.getBody());
-		} catch (RestClientException e) {
-			LOGGER.error("Error while calling MMR history V2 for player {} and region {}. Error : {}", puuid, region, e.getMessage());
-			res = Optional.ofNullable(null);
-		}
-		return res;
+
+	public Optional<MMRHistoryV2Response> getPlayerMMRHistoryV2(String region, String platform, String puuid) {
+		return executeGet(String.format(HenrikURL.MMR_HISTORY_V2_BY_ID_URL, region, platform, puuid), MMRHistoryV2Response.class,
+				"MMR history V2 for player " + puuid + " in region " + region);
 	}
-	
-	public Optional<MatchesV4Response> getMatchV4(final String region, final String matchId) {
-		LOGGER.info("Retrieving match {} in region {}", matchId, region);
-		String url = String.format(MATCH_DETAIL_V4_URL, region, matchId);
-		Optional<MatchesV4Response> res = null;
-		try {
-			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<MatchesV4Response> response = restClient.exchange(url, HttpMethod.GET, entity, MatchesV4Response.class);
-			if (HttpStatus.OK == response.getStatusCode()) {
-				LOGGER.info("Match {} found", matchId);
-			} else {
-				LOGGER.warn("Match {} not found. HTTP response code : {}", matchId,
-					response.getStatusCode().value());
-			}
-			res = Optional.ofNullable(response.getBody());
-		} catch (RestClientException e) {
-			LOGGER.error("Error while calling HenrikDev API for match {} and region {}. Error : {}", matchId, region, e.getMessage());
-			res = Optional.ofNullable(null);
-		}
-		return res;
+
+	public Optional<MatchesV4Response> getMatchV4(String region, String matchId) {
+		return executeGet(String.format(HenrikURL.MATCH_V4_URL, region, matchId), MatchesV4Response.class,
+				"match " + matchId + " in region " + region);
 	}
-	
-	public Optional<PremierTeamV1Response> getPremierTeamV1(final String teamName, final String teamTag){
-		LOGGER.info("Retrieving Premier team {}#{} in region {}", teamName, teamTag);
-		String url = String.format(PREMIER_TEAM_V1_URL, teamName, teamTag);
-		Optional<PremierTeamV1Response> res = null;
+
+	public Optional<PremierTeamV1Response> getPremierTeamV1(String teamName, String teamTag) {
+		return executeGet(String.format(HenrikURL.PREMIER_TEAM_V1_BY_TAG_URL, teamName, teamTag), PremierTeamV1Response.class,
+				"Premier team " + teamName + "#" + teamTag);
+	}
+
+	private <T> Optional<T> executeGet(String url, Class<T> responseType, String logContext) {
+		LOGGER.info("Calling GET {}", logContext);
 		try {
 			HttpEntity<String> entity = new HttpEntity<>(buildHeaders());
-			ResponseEntity<PremierTeamV1Response> response = restClient.exchange(url, HttpMethod.GET, entity, PremierTeamV1Response.class);
+			ResponseEntity<T> response = restClient.exchange(url, HttpMethod.GET, entity, responseType);
 			if (HttpStatus.OK == response.getStatusCode()) {
-				LOGGER.info("Premier team {}#{} found", teamName, teamTag);
+				LOGGER.info("GET {} succeeded", logContext);
 			} else {
-				LOGGER.warn("Premier team {}#{} not found. HTTP response code : {}", teamName, teamTag,	response.getStatusCode().value());
+				LOGGER.warn("GET {} returned HTTP {}", logContext, response.getStatusCode().value());
 			}
-			res = Optional.ofNullable(response.getBody());
+			return Optional.ofNullable(response.getBody());
 		} catch (RestClientException e) {
-			LOGGER.error("Error while calling HenrikDev API Premier team {}#{}. Error : {}", teamName, teamTag, e.getMessage());
-			res = Optional.ofNullable(null);
+			LOGGER.error("GET {} failed : {}", logContext, e.getMessage());
+			return Optional.empty();
 		}
-		return res;
 	}
 
 	private HttpHeaders buildHeaders() {
