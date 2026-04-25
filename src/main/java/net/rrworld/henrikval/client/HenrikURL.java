@@ -60,5 +60,5 @@ final class HenrikURL {
 	public static final String VERSION_V1_URL = ROOT_URL + "/valorant/v1/version/%s";
 	public static final String WEBSITE_V1_URL = ROOT_URL + "/valorant/v1/website/%s";
 	public static final String WEBSITE_V1_DB_URL = ROOT_URL + "/valorant/v1/website/%s/%s";
-	public static final String RAW_V1_URL = ROOT_URL + "/valorant/v1/website/%s/%s";
+	public static final String RAW_V1_URL = ROOT_URL + "/valorant/v1/raw";
 }
