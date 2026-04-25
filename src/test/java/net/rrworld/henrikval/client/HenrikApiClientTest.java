@@ -11,12 +11,11 @@ import java.util.Optional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
-import org.springframework.web.client.RestTemplate;
+import org.springframework.web.client.RestClient;
 
 import net.rrworld.henrikval.gen.model.MMRHistoryV1Response;
 import net.rrworld.henrikval.gen.model.MMRHistoryV2Response;
@@ -25,8 +24,8 @@ import net.rrworld.henrikval.gen.model.PremierTeamV1Response;
 
 public class HenrikApiClientTest {
 	
-	private RestTemplate restTemplate;
 	private HenrikApiClient client;
+	private MockRestServiceServer server;
 	private Resource mmrHistoryV1;
 	private Resource mmrHistoryV2;
 	private Resource matchV4;
@@ -34,8 +33,9 @@ public class HenrikApiClientTest {
 
 	@BeforeEach
 	public void init() throws IOException {
-		this.restTemplate = new RestTemplateBuilder().build();
-		this.client = new HenrikApiClient("foo-bar-api", restTemplate);
+        RestClient.Builder builder = RestClient.builder();
+        server = MockRestServiceServer.bindTo(builder).build();
+		this.client = new HenrikApiClient("foo-bar-api", builder);
 		this.mmrHistoryV1 = new ClassPathResource("v1mmrhistory.json");
 		this.mmrHistoryV2 = new ClassPathResource("v2mmrhistory.json");
 		this.matchV4 = new ClassPathResource("v4match.json");
@@ -44,7 +44,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getV1PlayerMMRHistory_200() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withSuccess(mmrHistoryV1, MediaType.APPLICATION_JSON));
 		
@@ -63,7 +62,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getV1PlayerMMRHistory_400() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withBadRequest());
 		
@@ -74,7 +72,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getV1PlayerMMRHistory_300() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/by-puuid/mmr-history/eu/fe067f25-57a5-4f95-81f1-06d96b2290be"))
 			.andRespond(withRawStatus(302));
 		
@@ -85,7 +82,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getV2PlayerMMRHistory_200() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v2/by-puuid/mmr-history/eu/pc/c6bd5d66-f629-410b-939b-9928c837f256"))
 			.andRespond(withSuccess(mmrHistoryV2, MediaType.APPLICATION_JSON));
 		
@@ -105,7 +101,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getV2PlayerMMRHistory_404() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v2/by-puuid/mmr-history/eu/pc/c6bd5d66-f629-410b-939b-9928c837f256"))
 		.andRespond(withRawStatus(404));
 		
@@ -117,7 +112,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getMatchV4_200() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
 			.andRespond(withSuccess(matchV4, MediaType.APPLICATION_JSON));
 		
@@ -136,7 +130,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getMatchV4_400() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
 			.andRespond(withBadRequest());
 		
@@ -147,7 +140,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getMatchV4_300() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v4/match/eu/696848f3-f16f-45bf-af13-e2192f81a600"))
 			.andRespond(withRawStatus(302));
 		
@@ -158,7 +150,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getPremierTeamV1_200() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
 			.andRespond(withSuccess(premierTeamV1, MediaType.APPLICATION_JSON));
 		
@@ -177,7 +168,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getPremierTeamV1_400() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
 			.andRespond(withBadRequest());
 		
@@ -188,7 +178,6 @@ public class HenrikApiClientTest {
 	
 	@Test
 	public void getPremierTeamV1_300() {
-		MockRestServiceServer server = MockRestServiceServer.createServer(restTemplate);
 		server.expect(requestTo("https://api.henrikdev.xyz/valorant/v1/premier/GoodGame/gg"))
 			.andRespond(withRawStatus(302));
 		

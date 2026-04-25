@@ -37,7 +37,7 @@ The SDK also provides a complete API model, generated from the [Swagger definiti
 ### Prerequisites
 What you need is :
 - A HenrikDev API key
-- Java 11 & Maven
+- Java 21 & Maven
 
 ### Installation
 Import dependency in your `pom.xml` :
@@ -46,7 +46,7 @@ Import dependency in your `pom.xml` :
 <properties>
   ...
   <!-- Use the latest version whenever possible. -->
-  <henrikval.client.version>1.1.0</henrikval.client.version>
+  <henrikval.client.version>2.0.0</henrikval.client.version>
   ...
 </properties>
 
@@ -69,21 +69,15 @@ HenrikApiClient client = new HenrikApiClient("HDEV-XXX");
 Optional<V1mmrh> res = client.getV1PlayerMMRHistory(Regions.EU.getValue(), "fe067f25-57a5-4f95-81f1-06d96b2290be");
 ```
 
-If you are in a Spring context, you may wish to initialize a bean using your `RestTemplate` instance :
-
-```java
-@Bean
-public HenrikApiClient getClient(@Autowired RestTemplate restClient, @Value("${henrikdev.api.key}") String apiKey) {
-	return new HenrikApiClient(apiKey, restClient);
-}
-```
-
 ## Documentation
 Javadoc is available [here](https://javadoc.io/doc/net.rr-world/henrikapi-val-client/latest/index.html)
 
 ## Changelog
-### v1.1.1 (TBD)
-- ...
+### v2.0.0 (TBD)
+- Upgrade spring-boot version (4)
+- Now requires Java 21
+- New endpoints
+- URL refactoring
 ### v1.1.0 (2026-02-19)
 - Change OAS source (swaggerhub.com -> https://api.henrikdev.xyz/docs)
 - Model 4.6.0 update (No more enums :( )

@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>net.rr-world</groupId>
 	<artifactId>henrikapi-val-client</artifactId>
-	<version>1.1.1-SNAPSHOT</version>
+	<version>2.0.0-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>henrikapi-val-client</name>
 	<description>Valorant Java client based on HenrikDev-API</description>
@@ -32,11 +32,15 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.18</version>
+		<version>4.0.6</version>
 		<relativePath />
 	</parent>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-restclient</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-json</artifactId>
@@ -50,6 +54,7 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 		    <groupId>org.springdoc</groupId>
@@ -60,7 +65,7 @@
 		<dependency>
 		    <groupId>org.openapitools</groupId>
 		    <artifactId>jackson-databind-nullable</artifactId>
-		    <version>0.2.6</version>
+		    <version>0.2.10</version>
 		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
@@ -126,7 +131,7 @@
 		    <plugin>
 			    <groupId>org.openapitools</groupId>
 			    <artifactId>openapi-generator-maven-plugin</artifactId>
-		    	<version>7.19.0</version>
+		    	<version>7.21.0</version>
 			    <executions>
 			        <execution>
 			            <goals>
@@ -144,6 +149,7 @@
 			                <!--configHelp>true</configHelp-->
 			                <!--https://openapi-generator.tech/docs/generator-->
 			                <configOptions>
+			                	<useSpringBoot4>true</useSpringBoot4>
 			                	<openApiNullable>false</openApiNullable>
 			                	<useOptional>false</useOptional>
 			                	<useEnumCaseInsensitive>true</useEnumCaseInsensitive>
@@ -213,10 +219,10 @@
 
 	<!-- properties -->
 	<properties>
-		<jacoco.plugin.version>0.8.8</jacoco.plugin.version>
+		<jacoco.plugin.version>0.8.14</jacoco.plugin.version>
 		<maven.gpg.version>3.2.4</maven.gpg.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.compiler.source>11</maven.compiler.source>
-		<maven.compiler.target>11</maven.compiler.target>
+		<maven.compiler.source>21</maven.compiler.source>
+		<maven.compiler.target>21</maven.compiler.target>
 	</properties>
 </project>
